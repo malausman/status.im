@@ -63,31 +63,51 @@
 <body class="template-index">
 
     <div class="main-container">
-        <header class="flex items-center relative justify-between px-8 xl:px-20 py-6 xl:py-0 js-header z-20">
+        <header class="flex items-center relative justify-between px-8 xl:px-20 py-6 xl:py-0 js-header z-50">
     <a href="/fr/" class="logo w-32 xl:w-48 flex-shrink-0"><img src="/img/logo.svg"></a>
     <nav class="js-nav overflow-auto xl:overflow-visible font-display">
         <ul class="flex flex-col xl:flex-row xl:items-center text-xl xl:text-xl font-display">
             <li class="xl:px-4 2xl:px-8 py-4 xl:py-16 md:text-lg 2xl:text-xl js-has-submenu hover:text-primary-base ">
-                <a href="/fr/features/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">
+                <a href="#" class="trigger-submenu hover:text-primary-base text-gray-800 font-medium inline-flex items-center w-full">
                   Aspects 
-                  <span class="hidden xl:block ml-4"><img src="/img/icon-arrow-down-small.svg"></span>
+                  <span class="block xl:ml-4 ml-auto"><img src="/img/icon-arrow-down-small.svg"></span>
                 </a>
-                <div class="bg-white shadow py-16 border-t text-gray-900 border-gray-100 absolute w-full left-0 top-1/1 invisible pointer-events-none opacity-0 transition-all duration-200 linear js-submenu z-10">
+                <div class="bg-white xl:shadow xl:py-16 py-4 xl:border-t text-gray-900 border-gray-100 relative xl:absolute w-full left-0 top-1/1 invisible pointer-events-none opacity-0 transition-all duration-200 linear js-submenu xl:block hidden z-10">
                     <div class="max-w-screen-lg mx-auto px-8 xl:px-12">
-                        <div class="grid grid-cols-2 gap-24 xl:gap-48">
-                            <div class="text-right">
-                                <h4 class="text-4xl font-display font-semibold">Aspects</h4>
+                        <div class="grid xl:grid-cols-2 grid-cols-1 gap-24 xl:gap-48">
+                            <div class="text-right xl:block hidden">
+                                <h4 class="text-4xl font-display font-normal">Aspects</h4>
                                 <p class="2xl:text-2xl mt-4 font-display font-normal">Private Messenger, Crypto Wallet, <br>Web3 Browser, and more</p>
-                                <a href="/fr/features/" class="group text-primary-base font-special font-semibold hover:text-primary-900 inline-flex items-center mt-8">
-                                  See All Features
-                                  <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-                                </a>
                             </div>
                             <div class="mt-4">
-                                <ul>
+                                <ul class="grid xl:grid-cols-2 gap-8">
+                                    <li>
+                                      <a href="/fr/private-messenger/" class="flex items-center group">
+                                        Private Messenger
+                                        <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr/account-creation/" class="flex items-center group">
+                                        Account Creation
+                                        <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr/secure-wallet/" class="flex items-center group">
+                                        Secure Crypto Wallet
+                                        <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+                                      </a>
+                                    </li>
                                     <li>
                                       <a href="/fr/keycard-integration/" class="flex items-center group">
                                         Keycard
+                                        <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr/web-three-browser/" class="flex items-center group">
+                                        Web3 Browser
                                         <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
                                       </a>
                                     </li>
@@ -97,13 +117,13 @@
                     </div>
                 </div>
             </li>
-            <li class="js-has-submenu hover:text-primary-base py-4 border-t md:text-lg 2xl:text-xl border-gray-100 xl:border-t-0  xl:px-4 2xl:px-8 xl:py-16">
+            <li class="js-has-submenu hover:text-primary-base py-4 border-t md:text-lg 2xl:text-xl border-gray-100 xl:border-t-0 xl:px-4 2xl:px-8 xl:py-16">
                 <a href="/fr/get-involved/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">S'impliquer <span class="ml-4 hidden xl:block"><img src="/img/icon-arrow-down-small.svg"></a></span>
                 <div class="bg-white shadow py-16 border-t border-gray-100 absolute w-full left-0 top-1/1 invisible pointer-events-none opacity-0 transition-all duration-200 linear js-submenu z-10">
                     <div class="max-w-screen-lg mx-auto px-8 xl:px-12">
                         <div class="grid grid-cols-2 gap-24 xl:gap-48">
                             <div class="text-right">
-                                <h4 class="text-2xl xl:text-4xl font-display font-semibold text-gray-900">S'impliquer</h4>
+                                <h4 class="text-4xl xl:text-4xl font-display text-gray-900">S'impliquer</h4>
                                 <p class="2xl:text-2xl text-gray-900 mt-4">Status est un projet open source <br>réalisé par des gens du monde entier.</p>
                                 <a href="/fr/get-involved/" class="group text-primary-base font-special font-semibold inline-flex items-center hover:text-primary-900 mt-12">
                                   En Savoir Plus
@@ -178,9 +198,9 @@
                     </div>
                 </div>
             </li>
-            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0  xl:px-4 2xl:px-8 xl:py-16 "><a href="/fr/security/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">Sécurité</a></li>
-            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0  xl:px-4 2xl:px-8 xl:py-16 "><a href="/fr/snt-utility/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">Utilité SNT</a></li>
-            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0  xl:px-4 2xl:px-8 xl:py-16 js-has-submenu " class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">
+            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0 xl:px-4 2xl:px-8 xl:py-16 "><a href="/fr/security/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">Sécurité</a></li>
+            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0 xl:px-4 2xl:px-8 xl:py-16 "><a href="/fr/snt-utility/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">Utilité SNT</a></li>
+            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0 xl:px-4 2xl:px-8 xl:py-16 js-has-submenu " class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">
                 <a href="/fr/docs/" class="hover:text-primary-base text-gray-800 font-medium inline-flex items-center">
                   Développeuses 
                   <span class="hidden xl:block ml-4"><img src="/img/icon-arrow-down-small.svg"></span>
@@ -189,7 +209,7 @@
                     <div class="max-w-screen-xl mx-auto px-8 lg:px-12">
                         <div class="grid grid-cols-2 gap-24 xl:gap-48">
                             <div class="text-right">
-                                <h4 class="text-2xl xl:text-4xl font-display font-semibold text-gray-900">Développeuses</h4>
+                                <h4 class="text-2xl xl:text-4xl font-display text-gray-900">Développeuses</h4>
                                 <p class="2xl:text-2xl mt-4 text-gray-900">Tout ce dont vous avez besoin pour commencer à <br>développer avec Status</p>
                                 <a href="/fr/docs/" class="group font-special font-semibold text-primary-base hover:text-primary-900 inline-flex items-center mt-8">
                                   Tout lire
@@ -234,8 +254,8 @@
                     </div>
                 </div>
             </li>
-            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0  xl:px-4 2xl:px-8 xl:py-16 "><a href="/fr/about/" class="text-gray-800 hover:text-primary-base font-medium inline-flex items-center">A propos</a></li>
-            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0  xl:px-4 2xl:px-8 xl:py-16"><a href="https://our.status.im" target="_blank" rel="noopener" class="text-gray-800 hover:text-primary-base font-medium inline-flex items-center">Blog</a></li>
+            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0 xl:px-4 2xl:px-8 xl:py-16 "><a href="/fr/about/" class="text-gray-800 hover:text-primary-base font-medium inline-flex items-center">A propos</a></li>
+            <li class="hover:text-primary-base py-4 border-t border-gray-100 md:text-lg 2xl:text-xl xl:border-t-0 xl:px-4 2xl:px-8 xl:py-16"><a href="https://our.status.im" target="_blank" rel="noopener" class="text-gray-800 hover:text-primary-base font-medium inline-flex items-center">Blog</a></li>
         </ul>
     </nav>
     <div class="flex flex-col xl:flex-row xl:items-center language-option js-btns">
@@ -263,7 +283,7 @@
     <a href="#" class="xl:hidden js-mobile-nav-trigger">
         <svg width="22" height="8" viewBox="0 0 22 8" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="22" height="1" rx="0.5" fill="#090909"/> <rect y="7" width="22" height="1" rx="0.5" fill="#090909"/> </svg>
     </a>
-    <div class="js-mobile-nav fixed xl:hidden xl:p-0 z-40 w-screen top-0 left-0 transform mt-8 scale-95 p-8 pointer-events-none opacity-0 xl:static xl:transform-none invisible transition-all duration-200 linear">
+    <div class="js-mobile-nav fixed xl:hidden xl:p-0 z-40 w-full top-0 left-0 transform mt-8 scale-95 p-8 pointer-events-none opacity-0 xl:static xl:transform-none invisible transition-all duration-200 linear">
         <div class="bg-white relative rounded shadow-lg p-8 xl:p-0 xl:hidden xl:bg-transparent xl:shadow-none">
             <div class="overflow-auto xl:overflow-visible js-mobile-nav-inner">
                 <div class="flex items-center justify-between mb-8">
@@ -277,206 +297,268 @@
     </div>
     <div class="js-backdrop bg-black bg-opacity-25 h-screen fixed w-screen top-0 left-0 z-10 pointer-events-none invisible opacity-0 transition-all duration-200 linear"></div>
 </header>
-
         <!-- The main content area -->
 <main id="main" role="main" class="overflow-hidden">
-
 	<!--HOME-INTRO-->
 	<section class="pt-16 xl:pt-0">
-  		<div class="max-w-screen-2xl mx-auto lg:px-12 xl:px-24">
-          <div class="grid md:grid-cols-2">
-  						<div class="relative px-8 md:pr-32 self-center">
-                <span class="bg-white w-screen absolute -z-1 right-0 h-full"></span>
-  							<h1 class="leading-tight font-display text-6xl font-medium xl:text-7xl 2xl:text-8xl">Communication Privée et Sécurisée</h1>
-  							<p class="text-gray-600 mt-12 text-xl 2xl:text-4xl font-display font-medium leading-normal">
-                  Le statut est un messager, de la crypto-monnaie et Web3 navigateur construit avec la pointe de la technologie.
-                </p>
-  							<div class="flex items-center -ml-12 mt-12">
-  								<a href="https://apps.apple.com/us/app/status-private-communication/id1178893006" target="_blank" rel="noopener" id="official:ios" class="ml-12 app-download"><img src="/img/app-store.svg"></a>
-  								<a href="https://play.google.com/store/apps/details?id=im.status.ethereum" target="_blank" rel="noopener" id="official:apk" class="ml-12 app-download"><img src="/img/google-play.svg"></a>
-  								<a href="https://status-im.ams3.cdn.digitaloceanspaces.com/StatusIm-v1.6.1.apk" target="_blank" rel="noopener" id="official:apk" class="ml-12 app-download"><img src="/img/apk.svg"></a>
-  							</div>
-  							<a href="#" target="_blank" class="group js-announcement inactive mt-32 font-special font-light text-lg text-gray-600 hover:text-primary-base hidden md:flex items-center">
-                  <span class="mr-4 bg-black uppercase tracking-wide font-special text-white text-base rounded p-2 leading-none">Nouvelles</span>
-                  <b></b>
-                  <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-                </a>
-  						</div>
-              <div class="bg-black relative mt-48 md:mt-0">
-                <span class="bg-black w-screen absolute -z-1 left-0 h-full"></span>
-  				      <div class="md:-ml-32 -mt-32 md:mt-0 mx-auto flex justify-center items-center md:block md:pt-20">
-                  <img src="/img/teaser-image.png" srcset="/img/teaser-image-2x.png 2x">
-                </div>
-              </div>
-          </div>
-      </div>
-	</section>
-	<!--END-HOME-INTRO-->
-
-	<!--HOME-ABOUT-->
-	<section class="mt-20 lg:mt-64">
-		<div class="max-w-screen-2xl mx-auto px-8 lg:px-12 xl:px-24">
-			<div class="grid md:grid-cols-2 gap-24">
-				<div>
-					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl">Un projet Open Source</h3>
-					<p class="text-gray-600 mt-12 text-lg font-medium 2xl:text-2xl font-display leading-relaxed">Status est complètement open source et réalisé par des contributeurs du monde entier. Développeurs, concepteurs, créateurs, éducateurs, amateurs, passionnés, etc. - tout le monde a un accès libre et ouvert aux pensions, aux actifs et aux informations.</p>
-					<ul class="flex flex-col md:flex-row md:items-center -ml-12">
-						<li class="mt-12 ml-12 text-lg 2xl:text-xl ">
-              <a href="/fr/technical/" class="inline-flex items-center text-primary-base font-semibold font-special">
-                <img src="/img/developers-img.svg"> 
-                <span class="ml-4">Développeurs</span>
-              </a>
-            </li>
-						<li class="mt-12 ml-12 text-lg 2xl:text-xl ">
-              <a href="/fr/get-involved/educators/" class="inline-flex items-center text-primary-base font-semibold font-special">
-                <img src="/img/educators-img.svg"> 
-                <span class="ml-4">Éducateurs</span>
-              </a>
-            </li>
-						<li class="mt-12 ml-12 text-lg 2xl:text-xl ">
-              <a href="/fr/get-involved/community-groups/" class="inline-flex items-center text-primary-base font-semibold font-special">
-                <img src="/img/community-group-img.svg"> 
-                <span class="ml-4">Groupes communautaires</span>
-              </a>
-            </li>
-					</ul>
+		<div class="max-w-screen-2xl mx-auto xl:px-12">
+			<div class="grid md:grid-cols-2">
+				<div class="relative px-8 md:pr-32 self-center">
+					<span class="bg-white w-screen absolute -z-1 right-0 h-full"></span>
+					<h1 class="leading-tight font-display text-6xl font-medium xl:text-7xl 2xl:text-8xl">Communication Privée et Sécurisée</h1>
+					<p class="text-gray-600 mt-12 text-xl 2xl:text-4xl font-display font-medium leading-normal">
+						Le statut est un messager, de la crypto-monnaie et Web3 navigateur construit avec la pointe de la technologie.
+					</p>
+					<div class="flex items-center -ml-12 mt-12">
+						<a href="https://apps.apple.com/us/app/status-private-communication/id1178893006" target="_blank" rel="noopener" id="official:ios" class="ml-12 app-download"><img src="/img/app-store.svg"></a>
+						<a href="https://play.google.com/store/apps/details?id=im.status.ethereum" target="_blank" rel="noopener" id="official:apk" class="ml-12 app-download"><img src="/img/google-play.svg"></a>
+						<a href="https://status-im.ams3.cdn.digitaloceanspaces.com/StatusIm-v1.6.1.apk" target="_blank" rel="noopener" id="official:apk" class="ml-12 app-download"><img src="/img/apk.svg"></a>
+					</div>
+					<a href="#" target="_blank" class="group js-announcement inactive mt-32 font-special font-light text-lg text-gray-600 hover:text-primary-base hidden md:flex items-center">
+						<span class="mr-4 bg-black uppercase tracking-wide font-special text-white text-base rounded p-2 leading-none">Nouvelles</span>
+						<b></b>
+						<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+					</a>
 				</div>
-				<div>
-					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl">Mission et Principes</h3>
-					<p class="text-gray-600 mt-12 text-lg 2xl:text-2xl font-medium leading-relaxed font-display">Status s'efforce d'être un outil de communication sécurisé qui défend les droits de la personne. Nous permettons l'argent communautaire, le droit communautaire et, par le biais de la vie privée, à préserver la culture.</p>
-					<a href="/fr/about/" class="text-lg 2xl:text-xl group inline-flex group items-center text-primary-base font-semibold font-special mt-12">
-            En Savoir Plus
-            <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-          </a>
+				<div class="bg-black relative mt-48 md:mt-0">
+					<span class="bg-black w-screen absolute -z-1 left-0 h-full"></span>
+					<div class="md:-ml-32 -mt-32 md:mt-0 mx-auto flex justify-center items-center md:block md:pt-20">
+						<img src="/img/teaser-image.png" srcset="/img/teaser-image-2x.png 2x">
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!--END-HOME-ABOUT-->
-
-	<!--HOME-DECENTRALIZED-PRIVATE-->
+	<!--END-HOME-INTRO-->
+	<!--HOME-ALL-->
 	<section>
-		<div class="max-w-screen-2xl mx-auto lg:px-12 xl:px-24 mt-20 lg:mt-64">
+		<div class="max-w-screen-2xl mx-auto lg:px-12">
+			<div class="grid md:grid-cols-8 gap-24">
+				<div class="flex flex-col md:col-span-3 col-span-6 px-8 justify-center items-start md:pt-0 pt-32">
+					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl">Message, Browse, Transact on your Terms</h3>
+					<p class="text-gray-600 mt-12 text-lg font-medium 2xl:text-2xl font-display leading-relaxed">Integrated into one powerful super app for private secure communication.</p>
+					<a href="#explore" class="js-scrollto transition-all duration-200 linear group py-4 pr-6 flex md:inline-flex justify-between items-center mt-32 border font-special font-semibold rounded border-white text-lg">
+						Explore Messenger
+						<span class="ml-6 group-hover:translate-y-1 rotate-90 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+					</a>
+				</div>
+				<div class="px-8 md:col-span-5 col-span-6">
+					<div class="mx-auto relative flex justify-center items-center md:block pb-32 md:py-48">
+						<div class="relative flex justify-center home-all">
+							<img src="/img/home-all-1.png" srcset="/img/home-all-1-2x.png 2x" class="img-1 top-0 transform -translate-x-64 absolute z-10">
+							<img src="/img/home-all-2.png" srcset="/img/home-all-2-2x.png 2x" class="img-2 z-10 relative">
+							<img src="/img/home-all-3.png" srcset="/img/home-all-3-2x.png 2x" class="img-3 top-0 transform translate-x-64 absolute z-10">
+							<div class="absolute overlay top-0 flex justify-center w-full left-0 z-20 opacity-0">
+								<img src="/img/home-all-splash.png" srcset="/img/home-all-splash-2x.png 2x">
+							</div>
+							<div class="absolute overlay top-0 md:flex h-full justify-center w-full left-0 z-20 opacity-0 hidden">
+								<div class="circles-container">
+									<span class="circle circle-1 absolute"></span>
+									<span class="circle circle-2 absolute"></span>
+									<span class="circle circle-3 absolute"></span>
+								</div>
+							</div>
+							<div class="absolute overlay top-0 h-full items-center flex justify-center w-full left-0 z-40 opacity-0">
+								<img src="/img/home-all-logo.svg" class="logo -mt-16">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END-HOME-ALL-->	
+	<!--HOME-DECENTRALIZED-PRIVATE-->
+	<section id="explore">
+		<div class="max-w-screen-2xl mx-auto lg:px-12">
 			<div class="grid md:grid-cols-2">
 				<div class="bg-blue-gray-light relative">
-          <span class="bg-blue-gray-light w-screen absolute -z-1 right-0 h-full"></span>
-					<div class="h-full px-8 py-32 md:p-32">
+					<span class="bg-blue-gray-light w-screen absolute -z-1 right-0 h-full"></span>
+					<div class="h-full px-8 py-32 md:pr-16">
 						<div class="row">
 							<div class="col-md-11 col-lg-10">
-								<img src="/img/decentralized-illustration.png" srcset="/img/decentralized-illustration-2x.png 2x">
-								<p class="text-lg 2xl:text-2xl text-gray-700 mt-12">Communication décentralisée</p>
-								<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl leading-snug mt-4">Chattez, parcourez, effectuez des transactions selon vos conditions</h3>
-								<p class="text-lg 2xl:text-xl mt-6">Status combine un navigateur de messagerie, un portefeuille et un navigateur DApp décentralisés en un outil de communication puissant, privé et sécurisé.</p>
-								<a href="/fr/features/" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-16 border font-special font-semibold hover:bg-black hover:text-white rounded border-black text-lg">
-                  Explorez toutes les fonctionnalités
-                  <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-                </a>
+								<img src="/img/private-message-illustration.png" srcset="/img/private-message-illustration-2x.png 2x">
+								<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl mt-24">Messagerie véritablement privée</h3>
+								<p class="text-lg 2xl:text-xl mt-6">Status utilise le protocole peer-to-peer Whisper et le chiffrement de bout en bout pour protéger vos communications des interférences de tiers. Vous seul pouvez voir vos messages.</p>
+								<a href="/fr/private-messenger/" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-12 border font-special font-semibold hover:bg-black hover:text-white rounded border-black text-lg">
+									Explore Messenger
+									<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="bg-black relative md:-mt-16">
-          <span class="bg-black w-screen absolute -z-1 left-0 h-full"></span>
+					<span class="bg-black w-screen absolute -z-1 left-0 h-full"></span>
 					<div class="h-full flex flex-col space-between px-8 py-32 md:p-32 text-white">
-            <div class="flex-1 order-2 md:order-none">
-  						<p class="text-lg 2xl:text-2xl text-gray-300">Protection de la vie privée</p>
-  						<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl leading-snug mt-4">Messagerie véritablement privée</h3>
-  						<p class="text-lg 2xl:text-xl mt-6 text-gray-300">Status utilise le protocole peer-to-peer Whisper et le chiffrement de bout en bout pour protéger vos communications des interférences de tiers. Vous seul pouvez voir vos messages.</p>
-              <a href="/fr/features/#secure-messenger" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-16 border font-special font-semibold hover:bg-white hover:text-black rounded border-white text-lg">
-                En Savoir Plus
-                <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-              </a>
-            </div>
-            <div class="mt-20 order-1 md:order-none mb-12 md:mb-0">
-              <img src="/img/private-message-illustration.png" srcset="/img/private-message-illustration-2x.png 2x">
-            </div>
+						<div class="flex-1 md:mt-12">
+							<p class="text-lg 2xl:text-2xl text-gray-300">Permettre l'argent communautaire</p>
+							<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl mt-4">Portefeuille Crypto sécurisé</h3>
+							<p class="text-lg 2xl:text-xl mt-6 text-gray-300">Envoyez, stockez et recevez en toute sécurité des actifs cryptos, notamment ERC20 et certains jetons ERC721. Vous seul possédez les clés de votre portefeuille sans serveur. La conception intuitive vous protège des attaques.</p>
+							<a href="/fr/secure-wallet/" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-12 border font-special font-semibold hover:bg-white hover:text-black rounded border-white text-lg">
+								En Savoir Plus
+								<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right-white.svg"></span>
+							</a>
+						</div>
+						<div class="mt-12 md:-mb-32">
+							<img src="/img/wallet-illustration.png" srcset="/img/wallet-illustration-2x.png 2x" class="mx-auto">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--END-HOME-DECENTRALIZED-PRIVATE-->
-
 	<!--HOME-WALLET-BROWSER-->
 	<section>
-		<div class="max-w-screen-2xl mx-auto lg:px-12 xl:px-24">
+		<div class="max-w-screen-2xl mx-auto lg:px-12">
 			<div class="grid md:grid-cols-2">
 				<div class="bg-black relative md:-mb-16 order-2 md:order-none">
-          <span class="bg-black w-screen absolute -z-1 right-0 h-full"></span>
-					<div class="h-full px-8 md:p-32 text-white flex flex-col space-between">
-						<div class="flex-1 mt-32">
-              <p class="text-lg 2xl:text-2xl text-gray-300">Permettre l'argent communautaire</p>
-  						<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl leading-snug mt-4">Portefeuille Crypto sécurisé</h3>
-  						<p class="text-lg 2xl:text-xl text-gray-300 mt-6">Envoyez, stockez et recevez en toute sécurité des actifs cryptos, notamment ERC20 et certains jetons ERC721. Vous seul possédez les clés de votre portefeuille sans serveur. La conception intuitive vous protège des attaques.</p>
-  						<a href="/fr/features/#integrated-ethereum-wallet" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-16 border font-special font-semibold hover:bg-white hover:text-black rounded border-white text-lg">
-                En Savoir Plus
-                <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-              </a>
-            </div>
-						<div class="mt-12 md:-mb-32">
-							<img src="/img/wallet-illustration.png" srcset="/img/wallet-illustration-2x.png 2x" class="mx-auto">
+					<span class="bg-black w-screen absolute -z-1 right-0 h-full"></span>
+					<div class="h-full flex flex-col space-between px-8 py-32 md:pr-16 text-white">
+						<div class="mt-12">
+							<p class="text-lg 2xl:text-xl text-gray-300">Possédez vos données</p>
+							<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl mt-4">Navigateur Web3 décentralisé</h3>
+							<p class="text-lg 2xl:text-xl text-gray-300 mt-4">Naviguez dans l'écosystème croissant d'applications décentralisées à partir de notre navigateur Web3, sans faire l'objet d'un suivi. Parcourez les dernières places de marché, échanges, jeux et plus encore.</p>
+							<a href="/fr/web-three-browser/" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-12 border font-special font-semibold hover:bg-white hover:text-black rounded border-white text-lg">
+								En Savoir Plus
+								<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right-white.svg"></span>
+							</a>
+						</div>
+						<div class="mt-12 md:mt-4 my-auto flex items-center justify-center flex-1">
+							<img src="/img/browser-illustration.png" srcset="/img/browser-illustration-2x.png 2x" class="mx-auto">
 						</div>
 					</div>
 				</div>
 				<div class="bg-blue-gray-light relative order-1 md:order-none">
-          <span class="bg-blue-gray-light w-screen absolute -z-1 left-0 h-full"></span>
+					<span class="bg-blue-gray-light w-screen absolute -z-1 left-0 h-full"></span>
 					<div class="h-full px-8 py-32 md:p-32">
-						<img src="/img/browser-illustration.png" srcset="/img/browser-illustration-2x.png 2x">
-						<p class="text-lg 2xl:text-2xl text-gray-700 mt-12">Possédez vos données</p>
-						<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl leading-snug mt-4">Navigateur Web3 décentralisé</h3>
-						<p class="text-lg 2xl:text-xl text-gray-700 mt-6">Naviguez dans l'écosystème croissant d'applications décentralisées à partir de notre navigateur Web3, sans faire l'objet d'un suivi. Parcourez les dernières places de marché, échanges, jeux et plus encore.</p>
-						<a href="/fr/features/#web3-browser" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-16 border font-special font-semibold hover:bg-black hover:text-white rounded border-black text-lg">
-              En Savoir Plus
-              <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-            </a>
+						<div class="row">
+							<div class="col-md-11 col-lg-10">
+								<img src="/img/account-creation-illustration.png" srcset="/img/account-creation-illustration-2x.png 2x">
+								<p class="text-lg 2xl:text-xl">Retain Your Privacy</p>
+								<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl mt-4">Pseudo-Anonymous Account Creation</h3>
+								<p class="text-lg 2xl:text-xl mt-4">You will never be asked for a phone number, email address, or bank account when creating a Status account. Stay private and selectively reveal yourself to the world with Status.</p>
+								<a href="/fr/account-creation/" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-12 border font-special font-semibold hover:bg-black hover:text-white rounded border-black text-lg">
+									En Savoir Plus
+									<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--END-HOME-WALLET-BROWSER-->
-
 	<!--HOME-SECURITY-->
-	<section class="mt-20 lg:mt-64 pb-20 lg:pb-64">
-		<div class="max-w-screen-2xl mx-auto px-8 lg:px-12 xl:px-24">
+	<section class="mt-20 lg:mt-64 pb-20 lg:pb-64 pt-12">
+		<div class="max-w-screen-2xl mx-auto px-8 lg:px-20">
 			<div class="grid md:grid-cols-2 gap-24">
 				<div>
-					
-						<h3 class="text-4xl xl:text-5xl 2xl:text-6xl inline-flex items-center">
-              <img src="/img/lock-small.svg">
-              <span class="ml-8">Privé et Sécurisé par Conception</span>
-            </h3>
-						<p class="max-w-6xl text-gray-600 mt-12 text-lg 2xl:text-2xl font-display font-medium leading-normal">Status utilise une technologie de pointe pour garantir que vos messages et vos transactions sont les vôtres. Status supprime les intermédiaires pour protéger vos messages et sécuriser vos actifs. Communiquez en toute confiance.</p>
-						<a href="/fr/security/" class="group inline-flex items-center text-primary-base font-semibold text-lg 2xl:text-2xl font-special mt-12">
-              En Savoir Plus
-              <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-            </a>
-					
+					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl inline-flex items-center">Privé et Sécurisé par Conception</h3>
+					<p class="max-w-6xl text-gray-600 mt-12 text-lg 2xl:text-2xl font-display font-medium leading-normal">Status utilise une technologie de pointe pour garantir que vos messages et vos transactions sont les vôtres. Status supprime les intermédiaires pour protéger vos messages et sécuriser vos actifs. Communiquez en toute confiance.</p>
+					<a href="/fr/security/" class="transition-all duration-200 linear group py-4 px-6 flex md:inline-flex justify-between items-center mt-12 border font-special font-semibold hover:bg-white hover:text-black text-white rounded border-black bg-black text-lg">
+						En Savoir Plus
+						<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right-white.svg"></span>
+					</a>
 				</div>
 				<div>
-					
-						<h3 class="text-4xl xl:text-5xl 2xl:text-6xl inline-flex items-center">
-              <img src="/img/status-network-small.svg">
-              <span class="ml-8">Réseau Status</span>
-            </h3>
-						<p class="max-w-6xl text-gray-600 mt-12 text-lg 2xl:text-2xl font-display font-medium leading-normal">Le réseau Status est un ensemble de projets et de personnes qui se consacrent à la création d'outils et d'infrastructures pour des communautés résilientes, durables et inclusives.</p>
-            <a href="https://statusnetwork.com/" target="_blank" class="group inline-flex items-center text-primary-base font-semibold text-lg 2xl:text-2xl font-special mt-12">
-              En savoir plus sur le réseau de Status
-              <span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
-            </a>
-					
+					<div class="relative h-64">
+						<div class="absolute inset-0 flex items-center justify-center">
+							<img src="/img/private-and-secure-bg.png" srcset="/img/private-and-secure-bg-2x.png 2x">
+						</div>
+						<div class="absolute inset-0 flex items-center justify-center private-and-secure">
+							<div class="flex">
+								<div class="flex mr-6 items-end relative">
+									<div class="relative flex">
+										<img src="/img/private-and-secure-avatar.png" srcset="/img/private-and-secure-avatar-2x.png 2x" class="avatar relative z-20">
+										<div class="absolute inset-0 flex items-center justify-center key z-index: 10 opacity-0">
+											<img src="/img/private-and-secure-key.svg">
+										</div>
+									</div>
+								</div>
+								<div class="inner relative">
+									<div class="description py-6">
+										<p class="max-w-6xl text-black-600 md:text-4xl text-1xl font-display leading-snug px-12">hey, what is everyone up to <br class="hidden md:inline">this long weekend?</p>
+									</div>
+									<div class="overlay h-full w-full justify-between px-16 items-center flex bg-black top-0 absolute">
+										<div class="text-white bold md:text-4xl text-1xl">1ßI30#{%3</div>
+										<div class="lock relative">
+											<img src="/img/private-and-secure-lock-bottom.svg">
+											<img src="/img/private-and-secure-lock-top.svg" class="absolute top-0">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!--END-HOME-SECURITY-->
-
+	<!--HOME-ABOUT-->
+	<section class="pt-24">
+		<div class="max-w-screen-2xl mx-auto px-8 lg:px-20">
+			<div class="grid md:grid-cols-2 gap-24">
+				<div>
+					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl">Un projet Open Source</h3>
+					<p class="text-gray-600 mt-12 text-lg 2xl:text-2xl font-display font-medium leading-normal">Status est complètement open source et réalisé par des contributeurs du monde entier. Développeurs, concepteurs, créateurs, éducateurs, amateurs, passionnés, etc. - tout le monde a un accès libre et ouvert aux pensions, aux actifs et aux informations.</p>
+					<ul class="flex flex-col md:flex-row md:items-center -ml-12">
+						<li class="mt-12 ml-12">
+							<a href="/fr/technical/" class="inline-flex items-center text-primary-base text-lg 2xl:text-2xl font-semibold font-special">
+								<img src="/img/developers-img.svg">
+								<span class="ml-4">Développeurs</span>
+							</a>
+						</li>
+						<li class="mt-12 ml-12">
+							<a href="/fr/get-involved/educators/" class="inline-flex items-center text-lg 2xl:text-2xl text-primary-base font-semibold font-special">
+								<img src="/img/educators-img.svg">
+								<span class="ml-4">Éducateurs</span>
+							</a>
+						</li>
+						<li class="mt-12 ml-12">
+							<a href="/fr/get-involved/community-groups/" class="inline-flex items-center text-lg 2xl:text-2xl text-primary-base font-semibold font-special">
+								<img src="/img/community-group-img.svg">
+								<span class="ml-4">Groupes communautaires</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="pb-32 md:pb-0">
+					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl">Mission et Principes</h3>
+					<p class="text-gray-600 mt-12 text-lg 2xl:text-2xl font-display font-medium leading-normal">Status s'efforce d'être un outil de communication sécurisé qui défend les droits de la personne. Nous permettons l'argent communautaire, le droit communautaire et, par le biais de la vie privée, à préserver la culture.</p>
+					<a href="/fr/about/" class="group inline-flex group items-center text-primary-base text-lg 2xl:text-2xl font-semibold font-special mt-12">
+						En Savoir Plus
+						<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right.svg"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END-HOME-ABOUT-->
+	<!--HOME-NETWORK-->
+	<section>
+		<div class="max-w-screen-2xl mx-auto lg:py-48 lg:px-20">
+			<div class="grid md:grid-cols-1">
+				<div class="flex flex-col justify-center text-white lg:xl-48 px-8 items-center py-32 bg-primary-base">
+					<h3 class="font-display text-4xl xl:text-5xl 2xl:text-6xl text-center">Réseau Status</h3>
+					<p class="text-primary-200 font-thin text-lg 2xl:text-2xl max-w-screen-md px-12 text-center pt-12">Le réseau Status est un ensemble de projets et de personnes qui se consacrent à la création d'outils et d'infrastructures pour des communautés résilientes, durables et inclusives.</p>
+					<a href="https://statusnetwork.com/" target="_blank" class="group inline-flex group items-center text-white text-lg 2xl:text-2xl font-semibold font-special mt-12">
+						En savoir plus sur le réseau de Status
+						<span class="ml-4 group-hover:translate-x-1 transform transition-all duration-200 linear"><img src="/img/icon-arrow-right-white.svg"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--END-HOME-NETWORK-->
 </main>
-
         <footer class="js-footer custom-footer bg-black pt-12 pb-48 text-white ">
-    <div class="max-w-screen-2xl mx-auto px-8 lg:px-12 mt-12">
+    <div class="max-w-screen-2xl mx-auto px-8 lg:px-20 mt-12">
         <div class="flex flex-col lg:flex-row lg:justify-between">
-            <h3 class="font-display font-normal text-4xl xl:text-6xl">Prêt à démarrer <br> avec Status ?</h3>
+            <h3 class="font-display font-normal text-4xl xl:text-5xl 2xl:text-6xl">Prêt à démarrer <br> avec Status ?</h3>
             <div class="lg:flex lg:items-center">
                 <div class="flex items-center mt-8 lg:mt-0">
                     <a href="https://apps.apple.com/us/app/status-private-communication/id1178893006" target="_blank" rel="noopener" id="official:ios" class="mr-16 app-download"><img src="/img/app-store.svg"></a>
@@ -490,7 +572,7 @@
             </div>
         </div>
     </div>
-    <div class="max-w-screen-2xl mx-auto px-8 lg:px-12 mt-24 xl:mt-40 navigation">
+    <div class="max-w-screen-2xl mx-auto px-8 lg:px-20 mt-24 xl:mt-40 navigation">
         <div class="grid md:grid-cols-4 md:gap-12">
             <div class="border-t border-gray-800 py-8 lg:pb-0 lg:pt-12">
                 
@@ -574,7 +656,7 @@
         </div>
     </div>
     <div>
-        <div class="max-w-screen-2xl mx-auto px-8 lg:px-12 mt-16 lg:mt-40">
+        <div class="max-w-screen-2xl mx-auto px-8 lg:px-20 mt-16 lg:mt-40">
             <h5 class="font-special uppercase tracking-widest text-lg">Connectez-vous</h5>
             <ul class="flex flex-wrap items-center -ml-8 mt-4">
                 <li class="ml-8 mt-8">
@@ -630,7 +712,7 @@
             </ul>
         </div>
     </div>
-    <div class="max-w-screen-2xl mx-auto px-8 lg:px-12 text-lg mt-24 lg:mt-40">
+    <div class="max-w-screen-2xl mx-auto px-8 lg:px-20 text-lg mt-24 lg:mt-40">
         <div class="flex flex-col lg:flex-row lg:justify-between text-gray-400 font-body">
             <div>
                 <div class="flex items-center">
